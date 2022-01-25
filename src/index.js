@@ -8,7 +8,11 @@ import App from "./App";
 
 Sentry.init({
   dsn: "https://ee653207e0234b15a07d7f644ec097f6@o1126328.ingest.sentry.io/6167165",
-  integrations: [new Integrations.BrowserTracing()],
+  integrations: [
+    new Integrations.BrowserTracing({
+      tracingOrigins: ["https://error-handling.netlify.app/"],
+    }),
+  ],
   tracesSampleRate: 1.0,
 });
 

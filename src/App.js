@@ -1,3 +1,4 @@
+import Counter from "./components/Counter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Hero from "./components/Hero";
 
@@ -6,6 +7,7 @@ const App = () => (
     <Hero heroName="Adam" />
     <Hero heroName="Kamil" />
     {/* <Hero heroName="Mateusz" /> */}
+    <Counter />
   </ErrorBoundary>
 );
 
