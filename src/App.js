@@ -5,7 +5,7 @@ const App = () => (
   <ErrorBoundary>
     <Hero heroName="Adam" />
     <Hero heroName="Kamil" />
-    <Hero heroName="Mateusz" />
+    {/* <Hero heroName="Mateusz" /> */}
   </ErrorBoundary>
 );
 
